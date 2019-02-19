@@ -3,7 +3,7 @@ import { Link, Redirect } from 'react-router-dom';
 
 const Profile = (props) => {
   const redir = () => {
-    return <Redirect to="/" />
+    props.history.push('/')
   }
 
   return (
