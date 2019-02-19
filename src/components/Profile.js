@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
 
 const Profile = (props) => {
-  const redir = () => {
+  const redirect = () => {
     props.history.push('/')
   }
 
@@ -12,7 +12,7 @@ const Profile = (props) => {
         pathname: `${props.match.url}/posts`
       }}> Take me to /profile/posts </Link> <br/>
       Profile
-      {redir()}
+      {redirect()}
     </div>
   )
 }
