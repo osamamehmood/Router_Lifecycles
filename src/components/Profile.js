@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 const Profile = (props) => {
   const redirect = () => {
     props.history.push('/')
+    // redirects user to the home page. Call this function if user is unauthorized
+    // Atm redirects to home upon clikcing profile link
   }
 
   return (
